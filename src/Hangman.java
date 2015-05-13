@@ -11,6 +11,7 @@ import acm.util.*;
 
 import java.awt.*;
 
+@SuppressWarnings("unused")
 public class Hangman extends ConsoleProgram {
 
 	private HangmanLexicon hangmanWords;
@@ -84,6 +85,7 @@ public class Hangman extends ConsoleProgram {
 			}
 			if(getChar.length() == 1) break;
 		}
+		getChar=getChar.toUpperCase();
 		ch = getChar.charAt(0);
 	}
 	
